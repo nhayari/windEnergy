@@ -29,3 +29,13 @@ Les trois notebooks suivants traitent les données de manière séquentielle et 
   → Application des dernières règles business complexes  
   → Sauvegarde dans la couche **Gold** (zone presentation / curated)  
   Objectif : fournir des données prêtes à être consommées par les rapports, dashboards et data products.
+
+## Notebooks du pipeline Medallion
+
+|------------------------------------|-----------|-----------------------------------------------|
+| Notebook                           | Couche    | Objectif principal                            |
+|------------------------------------|-----------|-----------------------------------------------|
+| 01_Ingestion_Journaliere_Bronze    | Bronze    | Ingestion brute quotidienne – données raw     |
+| 02_Transformation_to_Silver        | Silver    | Nettoyage, normalisation, qualité des données |
+| 03_Agregation_to_Gold              | Gold      | Agrégations et tables finales métier          |
+|------------------------------------|-----------|-----------------------------------------------|
